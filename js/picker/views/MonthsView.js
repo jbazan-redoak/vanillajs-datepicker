@@ -31,7 +31,7 @@ export default class MonthsView extends View {
     if (onConstruction) {
       this.grid = this.element;
       this.element.classList.add('months', 'datepicker-grid');
-      this.grid.appendChild(parseHTML(createTagRepeat('span', 12, {'data-month': ix => ix})));
+      this.grid.appendChild(parseHTML(createTagRepeat('button', 12, {'data-month': ix => ix})));
       this.first = 0;
       this.last = 11;
     }

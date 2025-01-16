@@ -19,7 +19,7 @@ export default class YearsView extends View {
       this.beforeShowOption = `beforeShow${toTitleCase(this.cellClass)}`;
       this.grid = this.element;
       this.element.classList.add(this.name, 'datepicker-grid');
-      this.grid.appendChild(parseHTML(createTagRepeat('span', 12)));
+      this.grid.appendChild(parseHTML(createTagRepeat('button', 12)));
     }
     super.init(options);
   }
